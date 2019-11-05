@@ -1,0 +1,71 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
+
+body {
+	background-image:url('../media/running.jpg');
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:black;
+	margin: 0;
+	padding: 0;
+	font-family: 'Karla', sans-serif;
+    color: #333;}
+
+/* Header */
+header {
+	background-color: #333333;
+	padding: 10px;
+	min-height: 50px;
+}
+h1 {
+  text-align: left;
+  overflow: hidden;
+  color:white;
+  font-size:3em;
+}
+h2 {
+	font-size: 2.5em;
+	padding:20px;
+	text-shadow:1px 1px black;
+	margin: 0;
+}
+/* Table styles */
+table {
+	margin-left:1%;
+	width: 60%;}
+th, td {
+	border-radius: 3px;
+	color: #333;
+	padding: 7px 10px 5px 10px;
+	min-width: 9em;
+	text-align: left;
+}
+th {
+	background-color: black;
+	color:white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+td {
+	background-color: #fff;
+}
+table.sortable th:hover {
+	cursor: pointer;
+}
+th.ascending, th.descending, table.sortable th:hover {
+	/*background-color: #00cccc;
+	color: #fff;*/
+	background-color:rgb(255, 0, 0);
+	color:linen;
+}
+
+/* Arrows for table sorting */
+th.ascending:after {
+	font-size: 60%;
+    content: '\25B2';
+    float: left;
+	padding: 4px 5px 0 0;}
+th.descending:after {
+	font-size: 60%;
+    content: '\25BC';
+    float: left;
+	padding: 4px 5px 0 0;}
